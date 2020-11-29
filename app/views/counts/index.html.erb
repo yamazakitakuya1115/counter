@@ -1,8 +1,8 @@
 <div class="count-number">
-  <%= @counter %>
+  <%= "冥炎魔天の挑戦 #{@counter}F" %>
 <div>
-<div class="count-btn">
+<div class="count-form">
   <%= form_with(model: @count, url: counts_path, local: true, method: :post) do |f| %>
-    <%= f.submit "(￣ー￣)ｂｸﾞｯ!" %>
+    <%= f.submit "(￣ー￣)ｂｸﾞｯ!", id: 'count-btn' %>
   <% end %>
 </div>
