@@ -1,1 +1,8 @@
-top page
+<div class="count-number">
+  <%= @counter %>
+<div>
+<div class="count-btn">
+  <%= form_with(model: @count, url: counts_path, local: true, method: :post) do |f| %>
+    <%= f.submit "(￣ー￣)ｂｸﾞｯ!" %>
+  <% end %>
+</div>
