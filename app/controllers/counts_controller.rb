@@ -7,8 +7,8 @@ class CountsController < ApplicationController
   def create
     Count.create(count_params)
     @counter = Count.all.length
-    render json: { count: @counter }
-    # redirect_to root_path
+    # render json: { count: @counter }
+    redirect_to root_path
   end
 
   private
