@@ -1,6 +1,9 @@
 <div class="count-number">
   <%= "#{@counter}F" %>
 <div>
+
+<div class="post" data-id=<%= @counter %>>
+</div>
 <div class="count-form">
   <%= form_with(model: @count, url: counts_path, local: true, method: :post) do |f| %>
   <div id="count-btn">
