@@ -5,7 +5,6 @@ class CountsController < ApplicationController
   end
 
   def create
-    binding.pry
     Count.create(count_params)
     @counter = Count.all.length
     # render json: { count: @counter }
