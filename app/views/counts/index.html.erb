@@ -3,6 +3,8 @@
 <div>
 <div class="count-form">
   <%= form_with(model: @count, url: counts_path, local: true, method: :post) do |f| %>
-    <%= f.submit "(￣ー￣)ｂ", id: 'count-btn' %>
+  <div id="count-btn">
+    aaa
+  </div>
   <% end %>
 </div>
